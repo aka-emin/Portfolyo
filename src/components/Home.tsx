@@ -7,6 +7,7 @@ function Home() {
             <p>Frontend Developer</p>
         </section>
     );
+
 }
 
 export default Home;
