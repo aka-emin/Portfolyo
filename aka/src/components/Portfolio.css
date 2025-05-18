@@ -1,0 +1,195 @@
+.portfolio-page {
+  min-height: 100vh;
+  background-color: #0a192f;  /* Koyu lacivert */
+  color: white;
+  padding: 4rem 0;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.portfolio-header h1 {
+  color: #64ffda;  /* Turkuaz başlık */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-header p {
+  color: #8892b0;  /* Açık gri */
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  background-color: #112240;  /* Biraz daha açık lacivert */
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #233554;  /* Kenarlık */
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #233554;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio-details {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-details h3 {
+  color: #ccd6f6;  /* Beyaza yakın */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-details p {
+  color: #8892b0;  /* Açık gri */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: #64ffda;  /* Turkuaz */
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.portfolio-links {
+  margin-top: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  color: #64ffda;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: #8892b0;
+  color: #8892b0;
+}
+
+.btn.disabled:hover {
+  background-color: transparent;
+}
+
+.passive-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 34, 64, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64ffda;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: transparent;
+  color: #ccd6f6;  /* Beyaza yakın */
+  border: 1px solid #233554;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: #64ffda;  /* Turkuaz */
+  border-color: #64ffda;
+}
+
+@media (max-width: 768px) {
+  .portfolio-header h1 {
+    font-size: 2rem;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  .portfolio-image {
+    height: 200px;
+  }
+  
+  .portfolio-details {
+    padding: 1.2rem;
+  }
+  
+  .filter-buttons {
+    padding: 0 1rem;
+  }
+} 

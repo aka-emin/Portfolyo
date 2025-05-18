@@ -1,0 +1,124 @@
+.contact-page {
+  min-height: 100vh;
+  background-color: #0a192f;  /* Koyu lacivert */
+  color: white;
+  padding: 4rem 0;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  color: #64ffda;  /* Turkuaz başlık */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-header p {
+  color: #8892b0;  /* Açık gri */
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  background-color: #112240;  /* Biraz daha açık lacivert */
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #233554;  /* Kenarlık */
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccd6f6;  /* Beyaza yakın */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #233554;
+  border-radius: 4px;
+  background-color: #0a192f;  /* Koyu lacivert */
+  color: #ccd6f6;  /* Beyaza yakın */
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #64ffda;  /* Turkuaz */
+  box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.2);
+}
+
+.submit-btn {
+  background-color: transparent;
+  color: #64ffda;  /* Turkuaz */
+  padding: 1rem 2rem;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+}
+
+.contact-info {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #64ffda;  /* Turkuaz */
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  color: #8892b0;  /* Açık gri */
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  color: #ccd6f6;  /* Beyaza yakın */
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: #64ffda;  /* Turkuaz */
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+} 

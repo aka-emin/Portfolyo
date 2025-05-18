@@ -1,0 +1,224 @@
+.about-page {
+  min-height: 100vh;
+  background-color: #0a192f;  /* Koyu lacivert arka plan */
+  color: white;
+}
+
+.about-hero {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), ;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  border-bottom: 3px solid #64ffda;  /* Turkuaz çizgi */
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 25, 47, 0.7);  /* Koyu lacivert overlay */
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #64ffda;  /* Turkuaz başlık */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  color: #8892b0;  /* Açık gri */
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.about-content {
+  background-color: #0a192f;  /* Koyu lacivert */
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-text h2 {
+  color: #64ffda;  /* Turkuaz başlık */
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.about-text p {
+  color: #8892b0;  /* Açık gri */
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.about-stats {
+  background-color: #112240;  /* Biraz daha açık lacivert */
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  border: 1px solid #233554;  /* Kenarlık */
+}
+
+.about-stats:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.stat-item {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #64ffda;  /* Turkuaz sayı */
+}
+
+.stat-label {
+  display: block;
+  font-size: 1.2rem;
+  color: #8892b0;  /* Açık gri */
+}
+
+.skills {
+  background-color: #112240;  /* Biraz daha açık lacivert */
+}
+
+.section-title {
+  text-align: center;
+  color: #64ffda;  /* Turkuaz başlık */
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-item {
+  background-color: #0a192f;  /* Koyu lacivert */
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #233554;  /* Kenarlık */
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  color: #ccd6f6;  /* Beyaza yakın */
+}
+
+.skill-percentage {
+  color: #64ffda;  /* Turkuaz yüzde */
+}
+
+.skill-bar {
+  height: 8px;
+  background-color: #233554;  /* Orta ton lacivert */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #64ffda;  /* Turkuaz progress bar */
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.education {
+  background-color: #0a192f;  /* Koyu lacivert */
+}
+
+.education-item {
+  background-color: #112240;  /* Biraz daha açık lacivert */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #233554;  /* Kenarlık */
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.education-item h3 {
+  color: #64ffda;  /* Turkuaz başlık */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.education-school {
+  color: #ccd6f6;  /* Beyaza yakın */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-year {
+  color: #8892b0;  /* Açık gri */
+  margin-bottom: 1rem;
+}
+
+.education-description {
+  color: #8892b0;  /* Açık gri */
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+} 
