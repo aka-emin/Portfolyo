@@ -21,7 +21,7 @@ const Services = () => {
     {
       icon: '🌐',
       title: 'Web Geliştirme',
-      description: 'React, HTML, CSS ve JavaScript teknolojilerini kullanarak modern ve responsive web siteleri tasarlıyorum. Kullanıcı dostu arayüzler ve interaktif web uygulamaları geliştirme konusunda uzmanım.'
+      description: 'React, HTML, CSS ve JavaScript teknolojilerini kullanarak modern ve responsive web siteleri tasarlıyorum. Kullanıcı dostu arayüzler ve interaktif web uygulamaları geliştirme yapıyorum.'
     }
   ];
 
