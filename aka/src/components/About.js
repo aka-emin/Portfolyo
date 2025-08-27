@@ -38,7 +38,7 @@ const About = () => {
             </div>
             <div className="about-stats">
               <Link to="/portfolio" className="stat-item">
-                <span className="stat-number">3</span>
+                <span className="stat-number">4</span>
                 <span className="stat-label">Tamamlanan Proje</span>
               </Link>
             </div>

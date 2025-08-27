@@ -31,6 +31,15 @@ const Portfolio = () => {
       description: 'Hayvanların yaşamını insan yaşam katsayısı ile hesaplayan uygulama.',
       image: '/images/yaşHesaplama.png',
       github: 'https://github.com/aka-emin/ya-am-hesaplama/tree/main'
+    },
+    {
+      id: 5,
+      title: 'Gun Game',
+      description: 'FPS tarzı küçük bir Gun Game projesi. Yakında detaylar ve bağlantılar eklenecek.',
+      image: '/images/Lobi.png',
+      isPassive: false,
+      github: 'https://github.com/aka-emin/buildeneme',
+      isPrivate: false
     }
   ];
 
