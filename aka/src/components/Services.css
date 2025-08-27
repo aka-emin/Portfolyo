@@ -2,7 +2,7 @@
   background-color: #0a192f;  /* Koyu lacivert arka plan */
   color: #ccd6f6;  /* Açık gri metin rengi */
   min-height: 100vh;
-  padding: 100px 0;
+  padding: 120px 0 100px; /* Sabit navbar için üstten fazladan boşluk */
 }
 
 .services-hero {

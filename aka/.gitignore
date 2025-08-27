@@ -50,3 +50,4 @@ Thumbs.db
 .eslintcache
 .env.development
 .env.production
+.vercel
